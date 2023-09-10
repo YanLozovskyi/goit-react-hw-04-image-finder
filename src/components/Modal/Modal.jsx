@@ -43,34 +43,3 @@ Modal.propTypes = {
   modalImg: PropTypes.string.isRequired,
   modalTags: PropTypes.string.isRequired,
 };
-
-// const Modal = ({ modalImg, modalTags, onClose }) => {
-//   useEffect(() => {
-//     window.addEventListener('keydown', handleKeyDown);
-
-//     return () => {
-//       window.removeEventListener('keydown', handleKeyDown);
-//     };
-//   });
-
-//   const handleKeyDown = e => {
-//     if (e.code === 'Escape') {
-//       onClose();
-//     }
-//   };
-
-//   const handleBackdropClick = e => {
-//     if (e.currentTarget === e.target) {
-//       onClose();
-//     }
-//   };
-
-//   return createPortal(
-//     <div className={css.Modal__backdrop} onClick={handleBackdropClick}>
-//       <div className={css.Modal__content}>
-//         <img src={modalImg} alt={modalTags} />
-//       </div>
-//     </div>,
-//     modalRoot
-//   );
-// };
